@@ -55,8 +55,6 @@ initialize is a special method in Ruby programs. When you call Song.new to creat
 An object is an object-oriented thing that is a computer program that consists of a state and a behavior, which in turn consist respectively of stored data and tasks that can be performed at runtime.
 
 >class KaraokeSong < Song
->  # Format ourselves as a string by appending
->  # our lyrics to our parent's #to_s value.
 >  def to_s
 >    super + " [#{@lyrics}]"
 >  end
